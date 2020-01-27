@@ -1,0 +1,51 @@
+{
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "web": "expo start --web",
+    "start": "react-native start",
+    "server:start": "nodemon ./api/server.js --exec babel-node",
+    "js:prettify": "npx prettier --parser=babel --write \"src/**/*.{js,jsx}\"",
+    "format": "npm run js:prettify",
+    "test": "jest"
+  },
+  "dependencies": {
+    "boom": "^7.2.0",
+    "dayjs": "^1.8.19",
+    "expo": "~36.0.0",
+    "hapi": "^17.5.4",
+    "joi": "^13.6.0",
+    "luxon": "^1.3.3",
+    "nodemon": "^1.18.4",
+    "react": "~16.9.0",
+    "react-dom": "~16.9.0",
+    "react-native": "~0.61.4",
+    "react-native-gesture-handler": "^1.5.3",
+    "react-native-reanimated": "~1.4.0",
+    "react-native-screens": "2.0.0-alpha.12",
+    "react-native-unimodules": "~0.7.0",
+    "react-native-web": "~0.11.7",
+    "react-navigation": "^4.0.10",
+    "react-navigation-tabs": "^2.7.0",
+    "styled-components": "^5.0.0",
+    "styled-system": "^5.1.4",
+    "swr": "^0.1.16",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/runtime": "^7.8.3",
+    "babel-jest": "~24.9.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "jest": "~24.9.0",
+    "metro-react-native-babel-preset": "~0.56.0",
+    "react-test-renderer": "~16.9.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "private": true
+}
